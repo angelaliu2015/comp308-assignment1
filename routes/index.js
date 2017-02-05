@@ -1,43 +1,44 @@
 let express = require('express');
 let router = express.Router();
 
+
 // Global Route Variables
 let currentDate = new Date();
   currentDate = currentDate.toLocaleTimeString();
 
 /* GET home page. wildcard */
 router.get('/', (req, res, next) => {
-  res.render('index', {
-    title: 'Express',
-    date: currentDate
+  res.render('content/index', {
+    title: 'Home'
    });
 });
 
 /* GET about page. */
 router.get('/about', (req, res, next) => {
-  res.render('about', {
-    title: 'About'
+  res.render('content/about', {
+    title: 'About Me'
    });
 });
 
-/* GET Project page. */
-router.get('/project', (req, res, next) => {
-  res.render('project', {
-    title: 'Project'
+/* GET products page. */
+router.get('/projects', (req, res, next) => {
+  res.render('content/projects', {
+    title: 'Projects'
    });
 });
 
-/* GET Service page. */
-router.get('/service', (req, res, next) => {
-  res.render('service', {
-    title: 'Service'
+/* GET services page. */
+router.get('/services', (req, res, next) => {
+  res.render('content/services', {
+    title: 'Services'
    });
 });
 
-/* GET Contact Me page. */
-router.get('/contactme', (req, res, next) => {
-  res.render('contact', {
-    title: 'Contact Me'
+/* GET contact page. */
+router.get('/contact', (req, res, next) => {
+  res.render('content/contact', {
+    title: 'Contact'
    });
 });
+
 module.exports = router;

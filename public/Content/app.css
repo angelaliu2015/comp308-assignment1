@@ -1,0 +1,16 @@
+/* Custom CSS goes here */
+body {
+  padding-bottom: 70px;
+  }
+
+.navbar-default {
+  background-color:#0f006f;
+  background-image: none;
+  background-repeat: no-repeat;
+  border-color: #030033;
+ }
+
+ .footer-custom {
+    color: #FFFFFF;
+}
+
