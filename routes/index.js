@@ -9,7 +9,7 @@ let currentDate = new Date();
 /* GET home page. wildcard */
 router.get('/', (req, res, next) => {
   res.render('content/index', {
-    title: 'Home'
+    title: 'Angela Liu Portfolio'
    });
 });
 

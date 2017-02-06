@@ -1,3 +1,8 @@
+/*  app.js
+    Author: Angela Liu
+    Website name: Angela Liu Portfolio
+    Description: app
+*/
 let express = require('express');
 let path = require('path'); // part of node.js core
 let favicon = require('serve-favicon');

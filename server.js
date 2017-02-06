@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Module dependencies.
+ * server.js
+    Author: Angela Liu
+    Website name: Angela Liu Portfolio
+    Description: /usr/bin/env node
+    Module dependencies.
  */
 
 let app = require('./app');

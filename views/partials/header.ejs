@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= title %></title>
     <!-- CSS SECTION -->
-    <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/Scripts/lib/font-awesome/css/font-awesome.min.css">
-    <link rel='stylesheet' href='/Content/app.css' />
-  </head>
-  <body>
+    <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap.min.css">         <!-- Bootstrap style -->
+    <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">   <!-- Bootstrap style -->
+    <link rel="stylesheet" href="/Scripts/lib/font-awesome/css/font-awesome.min.css">        <!-- Bootstrap style -->
+    <link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,400">        <!-- Google web font "Open Sans" -->
+    <link rel='stylesheet' href='/Content/app.css' />                                        <!-- Template style -->
+  </head> 
+   <body>
+    <nav class="navbar navbar-inverse" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                     </button>
+                 <!--Logo-->
+                  <div class="tm-header-inner" id="logo">
+                    <img src="/Images/logo.png" alt="" /> 
+                    <a href="#" class="navbar-brand tm-site-name">Angela Liu</a>
+                 </div>
+             </div>
 
-  <nav class="navbar navbar-inverse" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/"><i class="fa fa-fort-awesome"></i> Porfolio</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
+   <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
         <% if(title == "Home") { %>
@@ -53,5 +57,6 @@
           <li><a href="/contact"><i class="fa fa-phone fa-lg"></i> Contact</a></li>
         <% } %>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </nav>
+    </div><!-- /.navbar-collapse -->                      
+ </nav>                                  
+   
