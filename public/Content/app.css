@@ -83,16 +83,16 @@ navbar-header { font-size: 1.2rem; }
 }
 
 .tm-home-img-container {
-	background-image: url('../images/tm-home-img.jpg');
+	background-image: url('../Images/tm-home-img.jpg');
 	background-size: auto;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 200px;
 }
 
-.tm-about-img-container { background-image: url('../images/tm-about-img.jpg');	}
-.tm-product-img-container { background-image: url('../images/tm-product-img.jpg'); }
-.tm-contact-img-container { background-image: url('../images/tm-contact-img.jpg'); }
+.tm-about-img-container { background-image: url('../Images/tm-about-img.jpg');	}
+.tm-product-img-container { background-image: url('../Images/tm-product-img.jpg'); }
+.tm-contact-img-container { background-image: url('../Images/tm-contact-img.jpg'); }
 
 .tm-about-img-container,
 .tm-blog-img-container,
