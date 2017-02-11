@@ -9,10 +9,23 @@ let favicon = require('serve-favicon');
 let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
+let nodemailer = require("nodemailer");
 
 let index = require('./routes/index');
 
 let app = express();
+
+/*
+    Here we are configuring our SMTP Server details.
+    STMP is mail server which is responsible for sending and recieving email.
+*/
+let smtpTransport = nodemailer.createTransport("SMTP",{
+    service: "Gmail",
+    auth: {
+        user: "angelayh.liu@gmail.com",
+        pass: "Elenazhu@1123"
+    }
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

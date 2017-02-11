@@ -41,4 +41,23 @@ router.get('/contact', (req, res, next) => {
    });
 });
 
+router.get('/send',function(req,res){
+    var mailOptions={
+        name : req.query.name,
+        email : req.query.email,
+        subject : req.query.subject,
+        text : req.query.text
+    }
+    console.log(mailOptions);
+    smtpTransport.sendMail(mailOptions, function(error, response){
+     if(error){
+            console.log(error);
+        res.end("error");
+     }else{
+            console.log("Message sent: " + response.message);
+        res.end("sent");
+         }
+});
+});
+
 module.exports = router;

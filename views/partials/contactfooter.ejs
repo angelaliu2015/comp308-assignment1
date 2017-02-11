@@ -1,8 +1,8 @@
 <!--
-    footer.ejs
+    Contact footer.ejs
     Author: Angela Liu
     Website name: Angela Liu Portfolio
-    Description: footer
+    Description: footer for contact page
 -->
 <!-- Social Footer, Colour Matching Icons -->
 <!-- Include Font Awesome Stylesheet in Header -->
@@ -28,6 +28,33 @@
     <script src="/Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/Scripts/app.js"></script>
     <script src="/Scripts/tether.min.js"></script>
+    <script>$(document).foundation();</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script>//
+     <![CDATA[
+     /* Sending an email
+            ------------------------------------------------*/
+        $(document).ready(function(){
+        var name,email,subject,text;
+        $("#send_email").click(function(){     
+        name=$("#name").val();
+        from=$("#email").val();
+        subject=$("#subject").val();
+        text=$("#content").val();
+        $("#message").text("Sending E-mail...Please wait");
+        $.get("/sent",{name:name,email:email,subject:subject,text:text},function(data){
+        if(data=="sent")
+        {
+            $("#message").empty().html("
+
+            Email is been sent. Please check inbox !
+
+        ");
+        }
+
+        });
+         });
+        });
+</script>
     <script>
                 /* Google map
             ------------------------------------------------*/
