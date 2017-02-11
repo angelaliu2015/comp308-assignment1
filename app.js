@@ -18,14 +18,15 @@ let app = express();
 /*
     Here we are configuring our SMTP Server details.
     STMP is mail server which is responsible for sending and recieving email.
-*/
-let smtpTransport = nodemailer.createTransport("SMTP",{
-    service: "Gmail",
+
+let smtpTransport = nodemailer.createTransport('SMTP',{
+    service: 'Gmail',
     auth: {
         user: "angelayh.liu@gmail.com",
         pass: "password"
     }
 });
+*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
